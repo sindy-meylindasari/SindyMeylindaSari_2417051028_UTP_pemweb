@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Sindy Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars">
+  <span style="top:12%;left:8%"></span>
+  <span style="top:22%;left:85%;width:4px;height:4px"></span>
+  <span style="top:65%;left:12%"></span>
+  <span style="top:72%;left:74%;width:5px;height:5px"></span>
+  <span style="top:35%;left:52%;width:4px;height:4px"></span>
+  <span style="top:85%;left:42%;width:5px;height:5px"></span>
+  <span style="top:55%;left:90%"></span>
+  <span style="top:16%;left:44%;width:4px;height:4px"></span>
+</div>
+
+<nav class="nav">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">S</span>
+      <span>Sindy Portfolio</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="">Home</a>
+      <a href="about.html" class="">About</a>
+      <a href="projects.html" class="">Projects</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html" class="">Contact</a>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+  <main class="container">
+    <section class="section">
+      <div class="reveal">
+        <h1 class="section-title">Mood & Gallery 🌙</h1>
+        <p class="section-sub">Halaman ini dibuat untuk menunjukkan sisi visual portfolio: inspirasi, suasana, dan selera desain yang saya sukai.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal"><h3>📸 Fotografi</h3><p class="soft">Saya suka menangkap momen sederhana, cahaya malam, warna langit, dan detail kecil yang membuat suasana terasa lebih hidup.</p></article>
+        <article class="card reveal"><h3>🎵 Playlist Vibes</h3><p class="soft">Musik jadi teman favorit saat mendesain. Saya suka suasana calm, dreamy, dan sedikit magical untuk menjaga mood tetap nyaman.</p></article>
+        <article class="card reveal"><h3>🎮 Cozy Gaming</h3><p class="soft">Game jadi salah satu hiburan favorit saya. Dari sana saya sering mendapat inspirasi warna, interface, dan world-building visual.</p></article>
+      </div>
+      <div class="card reveal" style="margin-top:18px">
+        <h3>Palette Preview ✨</h3>
+        <p class="soft">Klik warna di bawah untuk mencoba nuansa background yang berbeda.</p>
+        <div class="palette-box">
+          <button class="swatch" style="background:linear-gradient(180deg,#0c0918,#15102a,#0c0918)" onclick="applyPalette('linear-gradient(180deg,#0c0918,#15102a,#0c0918)')"></button>
+          <button class="swatch" style="background:linear-gradient(180deg,#1a0f2f,#2b1752,#12091f)" onclick="applyPalette('linear-gradient(180deg,#1a0f2f,#2b1752,#12091f)')"></button>
+          <button class="swatch" style="background:linear-gradient(180deg,#1f1235,#442064,#180f2a)" onclick="applyPalette('linear-gradient(180deg,#1f1235,#442064,#180f2a)')"></button>
+          <button class="swatch" style="background:linear-gradient(180deg,#10111d,#1c2542,#0d0d15)" onclick="applyPalette('linear-gradient(180deg,#10111d,#1c2542,#0d0d15)')"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">A portfolio should also show your vibe ✨</footer>
+  <script src="script.js"></script>
+</body>
+</html>

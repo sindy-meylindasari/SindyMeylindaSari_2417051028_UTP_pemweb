@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sindy Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars">
+  <span style="top:12%;left:8%"></span>
+  <span style="top:22%;left:85%;width:4px;height:4px"></span>
+  <span style="top:65%;left:12%"></span>
+  <span style="top:72%;left:74%;width:5px;height:5px"></span>
+  <span style="top:35%;left:52%;width:4px;height:4px"></span>
+  <span style="top:85%;left:42%;width:5px;height:5px"></span>
+  <span style="top:55%;left:90%"></span>
+  <span style="top:16%;left:44%;width:4px;height:4px"></span>
+</div>
+
+<nav class="nav">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">S</span>
+      <span>Sindy Portfolio</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="">Home</a>
+      <a href="about.html" class="">About</a>
+      <a href="projects.html" class="">Projects</a>
+      <a href="gallery.html" class="">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+  <main class="container">
+    <section class="section">
+      <div class="reveal">
+        <h1 class="section-title">Contact Me 💌</h1>
+        <p class="section-sub">Berikut merupakan kontak yang dapat dihubungi.</p>
+      </div>
+      <div class="contact-grid">
+        <article class="card reveal">
+          <h3>Let’s Connect</h3>
+          <div class="info-list">
+            <div class="info-item"><strong>Email</strong><br>sindyms446@gmail.com</div>
+            <div class="info-item"><strong>Instagram</strong><br>@cmeyl._</div>
+            <div class="info-item"><strong>GitHub</strong><br>sindy-meylindasari</div>
+            <div class="info-item"><strong>WhatsApp</strong><br>085380717836</div>
+            <div class="info-item"><strong>Domisili</strong><br>Bandar Lampung</div>
+          </div>
+        </article>
+
+        <article class="card form-card reveal">
+          <h3>Send a Sweet Message ✨</h3>
+          <p class="soft" style="margin-top:0">Form ini dipakai untuk demo interaktif JavaScript DOM</p>
+          <form onsubmit="validateForm(event)">
+            <div class="form-group">
+              <div>
+                <label for="name">Nama</label>
+                <input id="name" type="text" placeholder="Masukkan nama kamu">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Masukkan email kamu">
+              </div>
+              <div>
+                <label for="message">Pesan</label>
+                <textarea id="message" placeholder="Tulis pesan manis di sini..."></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Kirim Pesan 💜</button>
+            </div>
+            <div class="error" id="formError">Belum ada input yang dicek.</div>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">Thank you for visiting my portfolio 💜</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sindy Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .filters{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px}
+    .filter-btn{padding:10px 14px; border:none; border-radius:999px; cursor:pointer; background:rgba(255,255,255,.08); color:white}
+    .filter-btn.active{background:linear-gradient(135deg, #b084ff, #f2b7ff); color:#1a1033; font-weight:700}
+  </style>
+</head>
+<body>
+
+<div class="stars">
+  <span style="top:12%;left:8%"></span>
+  <span style="top:22%;left:85%;width:4px;height:4px"></span>
+  <span style="top:65%;left:12%"></span>
+  <span style="top:72%;left:74%;width:5px;height:5px"></span>
+  <span style="top:35%;left:52%;width:4px;height:4px"></span>
+  <span style="top:85%;left:42%;width:5px;height:5px"></span>
+  <span style="top:55%;left:90%"></span>
+  <span style="top:16%;left:44%;width:4px;height:4px"></span>
+</div>
+
+<nav class="nav">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">S</span>
+      <span>Sindy Portfolio</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="">Home</a>
+      <a href="about.html" class="">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="gallery.html" class="">Gallery</a>
+      <a href="contact.html" class="">Contact</a>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+  <main class="container">
+    <section class="section">
+      <div class="reveal">
+        <h1 class="section-title">My Projects ✨</h1>
+        <p class="section-sub">Beberapa project dan karya yang merepresentasikan minat saya pada aplikasi, desain, dan tampilan visual yang menarik.</p>
+      </div>
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all" onclick="filterProjects('all')">Semua</button>
+        <button class="filter-btn" data-filter="app" onclick="filterProjects('app')">Aplikasi</button>
+        <button class="filter-btn" data-filter="web" onclick="filterProjects('web')">Website</button>
+        <button class="filter-btn" data-filter="design" onclick="filterProjects('design')">Desain</button>
+      </div>
+      <div class="grid-3">
+        <article class="card project-card reveal" data-type="app">
+          <div class="project-top">
+            <div><h3>LifeReplay</h3><p class="soft">Aplikasi untuk menyimpan kenangan, momen, dan catatan personal dalam satu tempat yang terasa hangat dan meaningful.</p></div>
+            <span class="project-badge">Featured</span>
+          </div>
+          <div class="project-tools"><span>Android Studio</span><span>Mobile UI</span><span>Memory App</span></div>
+        </article>
+        <article class="card project-card reveal" data-type="web">
+          <div class="project-top">
+            <div><h3>StudyBloom</h3><p class="soft">Website planner belajar dengan tampilan ungu yang lembut untuk membantu mengatur jadwal, target mingguan, dan progress tugas kuliah.</p></div>
+            <span class="project-badge">Web App</span>
+          </div>
+          <div class="project-tools"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+        <article class="card project-card reveal" data-type="design">
+          <div class="project-top">
+            <div><h3>ChibiGallery</h3><p class="soft">Konsep website portfolio fotografi dan moodboard visual yang menggabungkan hasil foto, palet warna, dan elemen cute aesthetic.</p></div>
+            <span class="project-badge">Creative</span>
+          </div>
+          <div class="project-tools"><span>Figma</span><span>Canva</span><span>UI Design</span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">Little ideas can grow into beautiful projects 💜</footer>
+  <script src="script.js"></script>
+</body>
+</html>

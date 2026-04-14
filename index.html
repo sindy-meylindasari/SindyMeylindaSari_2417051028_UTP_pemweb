@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sindy Meylinda Sari | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars">
+  <span style="top:12%;left:8%"></span>
+  <span style="top:22%;left:85%;width:4px;height:4px"></span>
+  <span style="top:65%;left:12%"></span>
+  <span style="top:72%;left:74%;width:5px;height:5px"></span>
+  <span style="top:35%;left:52%;width:4px;height:4px"></span>
+  <span style="top:85%;left:42%;width:5px;height:5px"></span>
+  <span style="top:55%;left:90%"></span>
+  <span style="top:16%;left:44%;width:4px;height:4px"></span>
+</div>
+
+<nav class="nav">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">S</span>
+      <span>My Portfolio</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html" class="">About</a>
+      <a href="projects.html" class="">Projects</a>
+      <a href="gallery.html" class="">Gallery</a>
+      <a href="contact.html" class="">Contact</a>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="kicker">💜 Portfolio Mahasiswa • Ilmu Komputer • Unila</span>
+          <h1>Halo, aku <span class="highlight">Sindy</span> — mahasiswa yang suka dunia web, desain visual, dan hal-hal aesthetic yang lucu.</h1>
+          <p>
+            Saya adalah Sindy Meylinda Sari, mahasiswa aktif semester 4 di Universitas Lampung.
+            Saya tertarik pada pembuatan tampilan web yang manis, rapi, dan nyaman dilihat, sambil terus belajar mengembangkan kemampuan di bidang coding dan desain.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">Explore My Project ✨</a>
+            <button class="btn btn-ghost" onclick="changeMood()">Change Mood 💫</button>
+          </div>
+        </div>
+
+        <div class="hero-side reveal">
+          <div class="hero-card">
+            <div class="chibi">
+              <div class="avatar">
+                <div class="hair"></div>
+                <div class="face">
+                  <div>
+                    <div class="eyes">
+                      <span class="eye"></span>
+                      <span class="eye"></span>
+                    </div>
+                    <div class="blush"><span></span><span></span></div>
+                    <div class="smile"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">purple</span>
+              <span class="tag">cute</span>
+              <span class="tag">robotic</span>
+            </div>
+          </div>
+
+          <div class="mini-panel">
+            <div class="mini-box">
+              <strong>Skill Favorite</strong>
+              <span class="soft">HTML, CSS, Python</span>
+            </div>
+            <div class="mini-box">
+              <strong>Hobi</strong>
+              <span class="soft">Fotografi & musik</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 class="section-title">Little Things About Me</h2>
+      <p class="section-sub">Bagian singkat tentang diriku.</p>
+      <div class="grid-3">
+        <article class="card">
+          <h3>🌙 My Vibe</h3>
+          <p class="soft">Saya suka nuansa gelap yang lembut, sentuhan ungu, dan elemen visual yang manis tapi tetap clean.</p>
+        </article>
+        <article class="card">
+          <h3>🎨 My Interest</h3>
+          <p class="soft">Selain coding, saya juga suka desain, eksplorasi warna, layout, dan tampilan antarmuka yang lucu.</p>
+        </article>
+        <article class="card">
+          <h3>✨ My Goal</h3>
+          <p class="soft">Terus berkembang sebagai mahasiswa yang kreatif dan bisa membuat project yang fungsional sekaligus menarik secara visual.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Made with 💜 by Sindy Meylinda Sari</footer>
+  <script src="script.js"></script>
+</body>
+</html>
